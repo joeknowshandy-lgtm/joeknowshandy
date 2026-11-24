@@ -1,68 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joe Knows Handywork</title>
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joe Knows Handywork | Handyman in Walworth County, WI</title>
+<meta name="description" content="Joe Suchomski, handyman based in Elkhorn and working across Walworth County, WI and nearby. TV mounting, light fixtures, ceiling fans, faucets, toilets and drywall repair. Text 312-270-5077.">
+<link rel="canonical" href="https://www.joeknowshandywork.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1E3A5F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Joe Knows Handywork | Walworth County Handyman">
+<meta property="og:description" content="Handyman work in Walworth County and beyond. Text Joe a photo of the job: 312-270-5077.">
+<meta property="og:url" content="https://www.joeknowshandywork.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Joe Knows Handywork",
+  "url": "https://www.joeknowshandywork.com/",
+  "telephone": "+1-312-270-5077",
+  "email": "joeknowshandy@gmail.com",
+  "founder": "Joe Suchomski",
+  "priceRange": "$$",
+  "address": {"@type": "PostalAddress", "addressLocality": "Elkhorn", "addressRegion": "WI", "addressCountry": "US"},
+  "areaServed": ["Walworth County, WI", "Elkhorn, WI", "Lake Geneva, WI", "Williams Bay, WI", "Fontana-on-Geneva Lake, WI", "Delavan, WI", "Walworth, WI", "East Troy, WI", "Genoa City, WI"],
+  "sameAs": ["https://share.google/kHv0fnUPg8j11tIYC"]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{--ink:#1B2430;--muted:#4A5563;--bg:#F6F3EE;--line:#E4DED4;--navy:#1E3A5F;--navy-dk:#142A45;--tint:#E8EEF5;--accent:#C2410C;--accent-dk:#9A3412}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em;margin:0}
+a{color:var(--accent)}
+img,svg{display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:10px;font:600 17px Inter,sans-serif;text-decoration:none;transition:background .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dk);color:#fff}
+.btn-outline{background:#fff;color:var(--ink);border:2px solid var(--ink)}.btn-outline:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}.btn-white:hover{background:var(--tint)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:10;background:rgba(246,243,238,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font:800 19px Archivo,sans-serif}
+.logo{width:42px;height:42px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a.link{color:var(--ink);text-decoration:none;font-weight:500}
+.nav a.link:hover{color:var(--accent)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:16px}
+@media(max-width:820px){.nav a.link{display:none}.brand span{font-size:17px}}
+@media(max-width:420px){.nav .btn .full{display:none}}
+
+/* hero */
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.pill{display:inline-block;background:var(--tint);color:var(--navy);font-weight:600;font-size:14px;padding:8px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(38px,6vw,60px);line-height:1.05;font-weight:800;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:clamp(18px,2.2vw,20px);color:var(--muted);margin:0 0 30px;max-width:560px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.checks{display:flex;flex-wrap:wrap;gap:10px 24px;margin:28px 0 0;padding:0;list-style:none;color:var(--muted);font-weight:500;font-size:15px}
+.checks li{display:flex;align-items:center;gap:8px}
+.quote-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 20px 40px -24px rgba(27,36,48,.25)}
+.quote-card h2{font-size:24px;margin-bottom:6px}
+.quote-card p{margin:0 0 22px;color:var(--muted)}
+.qsteps{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:16px}
+.qsteps li{display:flex;gap:14px;align-items:flex-start}
+.num{width:36px;height:36px;border-radius:999px;background:var(--accent);color:#fff;font:800 17px Archivo,sans-serif;display:flex;align-items:center;justify-content:center;flex:none}
+.qsteps b{display:block}
+.qsteps span{color:var(--muted);font-size:15px}
+.quote-card .btn{width:100%}
+.hero-mail{margin:18px 0 0;font-size:16px;color:var(--muted)}
+.hero-mail a{font-weight:600}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px}.hero{padding:44px 0 56px}}
+
+/* sections */
+section.band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec{padding:80px 0}
+@media(max-width:700px){.sec{padding:56px 0}}
+.sec-head{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:36px}
+.sec-head h2,.sec h2{font-size:clamp(30px,4vw,42px);line-height:1.1;font-weight:800}
+.sec-head p{margin:12px 0 0;font-size:18px;color:var(--muted);max-width:620px}
+.hourly{background:var(--navy);color:#fff;border-radius:14px;padding:18px 26px}
+.hourly small{display:block;font-size:14px;opacity:.85}
+.hourly .display{font-size:30px;font-weight:800}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column;gap:6px}
+.svc h3{font-size:19px;font-weight:700}
+.svc p{margin:0;color:var(--muted);font-size:15px}
+.price{margin-top:8px;display:flex;align-items:baseline;gap:6px}
+.price small{font-size:14px;color:var(--muted);font-weight:500}
+.price .display{font-size:28px;font-weight:800;color:var(--accent)}
+.fine{margin:24px 0 0;font-size:15px;color:var(--muted)}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:36px}
+.step{display:flex;flex-direction:column;gap:12px}
+.step .num{width:48px;height:48px;font-size:22px}
+.step h3{font-size:22px;font-weight:700}
+.step p{margin:0;font-size:17px;color:var(--muted)}
+
+.about .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.about p{font-size:18px;line-height:1.65;color:var(--muted);margin:16px 0 0}
+.area{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}
+.area h3{font-size:24px;margin-bottom:16px}
+.towns{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.towns li{background:var(--tint);color:var(--navy);font-weight:600;font-size:15px;padding:10px 16px;border-radius:999px}
+.area p{font-size:15px;margin-top:16px}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr}}
+
+.cta{background:var(--navy);color:#fff}
+.cta .wrap{display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;padding-top:72px;padding-bottom:72px}
+.cta h2{font-size:clamp(30px,4vw,40px);font-weight:800;line-height:1.1}
+.cta p{margin:12px 0 0;font-size:18px;color:#D5DEE9}
+.cta-btns{display:flex;flex-direction:column;gap:12px;flex:0 1 360px;width:100%}
+.cta-btns a.text{color:#fff;text-align:center;font-weight:500;font-size:15px;padding:8px}
+footer{background:var(--navy-dk);color:#C9D3E0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:22px;padding-bottom:22px}
+footer a{color:#fff}
+
+/* mobile sticky call bar */
+.mbar{display:none}
+@media(max-width:700px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+  .mbar .btn{min-height:48px;font-size:16px;padding:0 12px}
+  body{padding-bottom:76px}
+}
+</style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-6 text-center shadow-lg">
-    <h1 class="text-3xl font-bold">Joe Knows Handywork</h1>
-    <p class="text-lg">Serving Geneva Lake & Surrounding Towns</p>
-  </header>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Joe Knows Handywork home">
+      <span class="logo"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+      <span>Joe Knows Handywork</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#services">Prices</a>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn-primary" href="tel:+13122705077">Call<span class="full">&nbsp;312-270-5077</span></a>
+    </nav>
+  </div>
+</header>
 
-  <!-- About -->
-  <section class="bg-white rounded-2xl shadow-md p-6 max-w-4xl mx-auto my-6">
-    <h2 class="text-2xl font-semibold mb-3">About</h2>
-    <p>Hi, I’m Joe Suchomski. I run <b>Joe Knows Handywork</b>, a one-man handyman business. From small fixes to home improvements, I’m here to help — all at an affordable rate.</p>
-  </section>
+<main id="top">
 
-  <!-- Rates -->
-  <section class="bg-white rounded-2xl shadow-md p-6 max-w-4xl mx-auto my-6">
-    <h2 class="text-2xl font-semibold mb-3">Rates</h2>
-    <p><b>General Hourly Rate:</b> $50/hr (2-hour minimum = $100)</p>
-  </section>
-
-  <!-- Flat Rate Jobs -->
-  <section class="bg-white rounded-2xl shadow-md p-6 max-w-4xl mx-auto my-6">
-    <h2 class="text-2xl font-semibold mb-3">Popular Flat-Rate Jobs</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>TV Mounting (up to 65") — $120</li>
-      <li>Furniture Assembly — $50–$150</li>
-      <li>Cabinet Door Install — $30 each</li>
-      <li>Light Fixture Replacement — $100</li>
-      <li>Ceiling Fan Replacement — $150</li>
-      <li>Faucet Replacement — $130</li>
-      <li>Toilet Replacement — $175</li>
-      <li>Blind/Curtain Rod Install — $50 each</li>
-      <li>Small Drywall Patch — $75</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section class="bg-white rounded-2xl shadow-md p-6 max-w-4xl mx-auto my-6 text-center">
-    <h2 class="text-2xl font-semibold mb-3">Get in Touch</h2>
-    <p>📞 <a href="tel:3122705077" class="text-blue-600">312-270-5077</a></p>
-    <p>📧 <a href="mailto:joeknowshandy@gmail.com" class="text-blue-600">joeknowshandy@gmail.com</a></p>
-    <p>🌐 Find me on Google: <b>Joe Knows Handywork</b></p>
-  </section>
-
-  <!-- Map -->
-  <section class="bg-white rounded-2xl shadow-md p-6 max-w-4xl mx-auto my-6">
-    <h2 class="text-2xl font-semibold mb-3 text-center">Service Area</h2>
-    <div class="w-full h-96 rounded-2xl overflow-hidden shadow">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18565.23654837548!2d-88.4605!3d42.5917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8805810ac7c4cf11%3A0x7c83c784d2c7c517!2sGeneva%20Lake!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill">Handyman · Walworth County and beyond</span>
+      <h1>The to-do list you keep putting off? <em>I'll take care of it.</em></h1>
+      <p class="lead">I mount TVs, swap out light fixtures and ceiling fans, replace faucets and toilets, patch drywall, and handle the other small jobs around the house.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="sms:+13122705077">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text me a photo
+        </a>
+        <a class="btn btn-outline" href="tel:+13122705077">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call 312-270-5077
+        </a>
+      </div>
+      <p class="hero-mail">Rather email? <a href="mailto:joeknowshandy@gmail.com">joeknowshandy@gmail.com</a></p>
+      <ul class="checks">
+        <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Estimates from a photo</li>
+        <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Based in Elkhorn</li>
+        <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>I clean up when I'm done</li>
+      </ul>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-4 text-center mt-6">
-    <p>&copy; 2025 Joe Knows Handywork. All rights reserved.</p>
-  </footer>
+    <aside class="quote-card" aria-labelledby="q-title">
+      <h2 id="q-title">Want an estimate?</h2>
+      <p>I can usually give you a good idea from a picture.</p>
+      <ol class="qsteps">
+        <li><span class="num">1</span><div><b>Take a photo</b><span>of whatever needs work.</span></div></li>
+        <li><span class="num">2</span><div><b>Text it to 312-270-5077</b><span>and tell me what town you're in.</span></div></li>
+        <li><span class="num">3</span><div><b>I'll get back to you</b><span>with an estimate, usually the same day.</span></div></li>
+      </ol>
+      <a class="btn btn-primary" href="sms:+13122705077">Text 312-270-5077</a>
+    </aside>
+  </div>
+</section>
 
+<section class="band" id="services">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <div>
+        <h2>Common jobs and starting prices</h2>
+        <p>These are starting points for a standard job, and parts aren't included. Older houses come with surprises, like a rotted toilet flange or a ceiling box that won't hold a fan. When that happens, I'll show you what I found and talk it through with you before going further.</p>
+      </div>
+      <div class="hourly"><small>Everything else</small><div class="display">$65/hr</div><small>2-hour minimum ($130)</small></div>
+    </div>
+    <div class="grid">
+      <div class="svc"><h3>TV Mounting</h3><p>Up to 65" on drywall</p><div class="price"><small>from</small><span class="display">$150</span></div></div>
+      <div class="svc"><h3>Furniture Assembly</h3><p>Dressers, desks, beds, shelving</p><div class="price"><small>from</small><span class="display">$65</span></div></div>
+      <div class="svc"><h3>Light Fixture Replacement</h3><p>Swap out an existing fixture</p><div class="price"><small>from</small><span class="display">$125</span></div></div>
+      <div class="svc"><h3>Ceiling Fan Replacement</h3><p>Take down the old one, put up the new one</p><div class="price"><small>from</small><span class="display">$185</span></div></div>
+      <div class="svc"><h3>Faucet Replacement</h3><p>Kitchen or bathroom</p><div class="price"><small>from</small><span class="display">$160</span></div></div>
+      <div class="svc"><h3>Toilet Replacement</h3><p>Pull the old one, set the new one</p><div class="price"><small>from</small><span class="display">$225</span></div></div>
+      <div class="svc"><h3>Small Drywall Patch</h3><p>Holes, dents, doorknob damage</p><div class="price"><small>from</small><span class="display">$95</span></div></div>
+      <div class="svc"><h3>Blinds &amp; Curtain Rods</h3><p>Per window</p><div class="price"><span class="display">$60</span><small>each</small></div></div>
+    </div>
+    <p class="fine">Don't see your job here? Text me and ask. There's a good chance I do it.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap sec">
+    <div>
+      <h2>Hi, I'm Joe.</h2>
+      <p>I live in Elkhorn and started Joe Knows Handywork to help people with the jobs around the house that are too small for a contractor but still need to be done right.</p>
+      <p>It's just me. I answer the phone, I look at the job, and I'm the one who shows up to do the work.</p>
+      <p><a href="https://share.google/kHv0fnUPg8j11tIYC" target="_blank" rel="noopener">See my Google page →</a></p>
+    </div>
+    <div class="area">
+      <h3>Walworth County and beyond</h3>
+      <ul class="towns">
+        <li>Elkhorn</li><li>Lake Geneva</li><li>Delavan</li><li>Williams Bay</li><li>Fontana</li><li>Walworth</li><li>East Troy</li><li>Genoa City</li>
+      </ul>
+      <p>Outside the county? Text me anyway. I travel for the right job.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div>
+      <h2 id="cta-title">Have a job in mind?</h2>
+      <p>Text, call, or email me and I'll get back to you.</p>
+    </div>
+    <div class="cta-btns">
+      <a class="btn btn-primary" href="sms:+13122705077">Text 312-270-5077</a>
+      <a class="btn btn-white" href="mailto:joeknowshandy@gmail.com">joeknowshandy@gmail.com</a>
+      <a class="text" href="https://share.google/kHv0fnUPg8j11tIYC" target="_blank" rel="noopener">Already worked with me? Leave a Google review →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Joe Knows Handywork · Elkhorn, WI</span>
+    <span><a href="tel:+13122705077">312-270-5077</a> · <a href="mailto:joeknowshandy@gmail.com">joeknowshandy@gmail.com</a></span>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick contact">
+  <a class="btn btn-primary" href="sms:+13122705077">Text Joe</a>
+  <a class="btn btn-outline" href="tel:+13122705077">Call Joe</a>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
